@@ -97,3 +97,42 @@ document.getElementById("nextMes").onclick=()=>{
 dataAtual.setMonth(dataAtual.getMonth()+1)
 renderCalendar()
 }
+
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+
+if(window.scrollY > 50){
+header.classList.add("header-scroll");
+}else{
+header.classList.remove("header-scroll");
+}
+
+});
+
+window.addEventListener("scroll", () => {
+
+if(window.scrollY > 50){
+header.classList.add("scroll")
+}else{
+header.classList.remove("scroll")
+}
+
+})
+
+const elements = document.querySelectorAll(".card, .dentista, .depoimento")
+
+window.addEventListener("scroll", () => {
+
+elements.forEach(el => {
+
+const position = el.getBoundingClientRect().top
+const screen = window.innerHeight
+
+if(position < screen - 100){
+el.classList.add("fade-up","show")
+}
+
+})
+
+})

@@ -505,6 +505,86 @@ font-size:14px;
 color:#94a3b8;
 }
 
+/* HEADER PREMIUM */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+
+background:rgba(255,255,255,0.8);
+backdrop-filter:blur(12px);
+
+transition:all 0.3s ease;
+}
+
+.hero{
+margin-top:90px;
+}
+
+/* header menor quando rolar */
+
+header.scroll{
+padding:8px 8%;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* diminuir logo */
+
+header.scroll .logo{
+font-size:15px;
+}
+
+/* diminuir botão */
+
+header.scroll .btn-agendar{
+padding:6px 14px;
+}
+
+/* HEADER NORMAL */
+header{
+transition:all 0.3s ease;
+}
+
+/* HEADER MENOR AO SCROLL */
+header.header-scroll{
+padding:8px 5%;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* diminuir logo */
+header.header-scroll .logo{
+font-size:20px;
+}
+
+/* diminuir menu */
+header.header-scroll nav a{
+font-size:14px;
+}
+
+/* diminuir botão */
+header.header-scroll .btn-agendar{
+padding:8px 14px;
+font-size:14px;
+}
+
+.fade-up{
+opacity:0;
+transform:translateY(30px);
+transition:0.6s;
+}
+
+.fade-up.show{
+opacity:1;
+transform:translateY(0);
+}
+
 /* TABLET */
 
 @media (max-width:1024px){
@@ -617,6 +697,104 @@ align-items:center;
 .equipe-grid{
 flex-direction:column;
 align-items:center;
+}
+
+}
+
+@media (max-width:600px){
+
+/* HEADER */
+
+header{
+padding:12px 5%;
+flex-direction:column;
+gap:10px;
+text-align:center;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+
+nav a{
+margin:0;
+font-size:13px;
+}
+
+/* HERO */
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:14px;
+padding:0 10px;
+}
+
+/* CAIXA DE AGENDAMENTO */
+
+.agendamento-box{
+width:90%;
+padding:25px;
+}
+
+/* INPUTS */
+
+.agendamento-box input,
+.agendamento-box select{
+font-size:14px;
+padding:10px;
+}
+
+/* CALENDÁRIO */
+
+#calendario{
+width:100%;
+max-width:100%;
+padding:15px;
+}
+
+.cal-grid{
+gap:5px;
+}
+
+.cal-dia{
+font-size:14px;
+}
+
+/* GALERIA */
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+/* TABELA DO BARBEIRO */
+
+#barbeiroTable{
+min-width:500px;
+}
+
+}
+
+/* ================= TELAS MUITO PEQUENAS ================= */
+
+@media (max-width:400px){
+
+.cal-dia{
+font-size:12px;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.btn{
+padding:12px 25px;
+font-size:13px;
 }
 
 }
