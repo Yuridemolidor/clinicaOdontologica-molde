@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Clínica Odonto Premium</title>
+
+<meta name="description" content="Clínica odontológica moderna especializada em implantes, clareamento e ortodontia. Agende sua consulta.">
+<meta name="keywords" content="dentista, clínica odontológica, implantes, clareamento dental">
+
+<meta property="og:title" content="Clínica Odonto Premium">
+<meta property="og:description" content="Clínica odontológica moderna especializada em implantes, clareamento e ortodontia.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5">
+
+<link rel="stylesheet" href="./styles/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Odonto<span>Premium</span></div>
+
+<nav>
+<a href="#home">Início</a>
+<a href="#servicos">Serviços</a>
+<a href="#sobre">Sobre</a>
+<a href="#equipe">Equipe</a>
+<a href="#contato">Contato</a>
+</nav>
+
+<a class="btn-agendar" href="#agendamento">Agendar</a>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Sorriso saudável é qualidade de vida</h1>
+
+<p>Tecnologia moderna e atendimento humanizado para cuidar do seu sorriso.</p>
+
+<a href="#agendamento" class="hero-btn">Agendar Consulta</a>
+
+</div>
+
+</section>
+
+<section class="servicos" id="servicos">
+
+<h2>Nossos Serviços</h2>
+
+<div class="servicos-grid">
+
+<div class="card">
+<h3>Limpeza Dental</h3>
+<p>Remoção de placas e prevenção de doenças bucais.</p>
+</div>
+
+<div class="card">
+<h3>Clareamento</h3>
+<p>Deixe seu sorriso mais branco e bonito.</p>
+</div>
+
+<div class="card">
+<h3>Implantes</h3>
+<p>Recupere dentes perdidos com tecnologia moderna.</p>
+</div>
+
+<div class="card">
+<h3>Ortodontia</h3>
+<p>Correção e alinhamento do sorriso.</p>
+</div>
+
+<div class="card">
+<h3>Canal</h3>
+<p>Tratamento para salvar dentes comprometidos.</p>
+</div>
+
+<div class="card">
+<h3>Estética</h3>
+<p>Transforme seu sorriso com procedimentos estéticos.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="sobre" id="sobre">
+
+<div class="sobre-img">
+<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5">
+</div>
+
+<div class="sobre-text">
+
+<h2>Sobre a Clínica</h2>
+
+<p>Nossa clínica conta com equipamentos modernos e profissionais especializados para oferecer o melhor atendimento odontológico.</p>
+
+<ul>
+<li>✔ Tecnologia moderna</li>
+<li>✔ Atendimento humanizado</li>
+<li>✔ Profissionais especializados</li>
+</ul>
+
+</div>
+
+</section>
+
+<section class="depoimentos">
+
+<h2>Depoimentos</h2>
+
+<div class="depoimentos-grid">
+
+<div class="depoimento">
+<p>"Atendimento excelente e equipe muito profissional."</p>
+<span>⭐⭐⭐⭐⭐</span>
+</div>
+
+<div class="depoimento">
+<p>"Minha experiência foi incrível, recomendo muito."</p>
+<span>⭐⭐⭐⭐⭐</span>
+</div>
+
+<div class="depoimento">
+<p>"Melhor clínica da cidade."</p>
+<span>⭐⭐⭐⭐⭐</span>
+</div>
+
+</div>
+
+</section>
+
+<section class="equipe" id="equipe">
+
+<h2>Nossa Equipe</h2>
+
+<div class="equipe-grid">
+
+<div class="dentista">
+<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
+<h3>Dr. João Silva</h3>
+<p>Implantodontista</p>
+</div>
+
+<div class="dentista">
+<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
+<h3>Dra. Maria Souza</h3>
+<p>Ortodontista</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="agendamento" id="agendamento">
+
+<h2>Agendar Consulta</h2>
+
+<div class="agendamento-box">
+
+<form id="form" class="agendamento-container">
+
+<input type="text" id="nome" placeholder="Seu Nome" required>
+
+<input type="tel" id="telefone" placeholder="Seu Telefone" required>
+
+<select id="servico">
+<option>Selecione um serviço</option>
+<option>Limpeza Dental</option>
+<option>Clareamento</option>
+<option>Implante</option>
+<option>Ortodontia</option>
+<option>Canal</option>
+</select>
+
+<div class="calendar-box">
+
+<div class="calendar-header">
+
+<button type="button" id="prevMes">◀</button>
+
+<span id="mesAno"></span>
+
+<button type="button" id="nextMes">▶</button>
+
+</div>
+
+<div class="calendar-grid" id="calendar"></div>
+
+</div>
+
+<div class="horarios">
+
+<h3>Horários disponíveis</h3>
+
+<div class="horarios-grid">
+
+<button type="button" class="hora">09:00</button>
+<button type="button" class="hora">10:00</button>
+<button type="button" class="hora">11:00</button>
+<button type="button" class="hora">13:00</button>
+<button type="button" class="hora">14:00</button>
+<button type="button" class="hora">15:00</button>
+<button type="button" class="hora">16:00</button>
+
+</div>
+
+</div>
+
+<input type="hidden" id="data">
+<input type="hidden" id="hora">
+
+<button type="submit" class="btn-agendar">
+Confirmar Agendamento
+</button>
+
+</form>
+
+</div>
+
+</section>
+<section class="contato" id="contato">
+
+<h2>Onde Estamos</h2>
+
+<div class="map-container">
+
+<iframe
+src="https://maps.google.com/maps?q=sao%20paulo&t=&z=13&ie=UTF8&iwloc=&output=embed"
+loading="lazy">
+</iframe>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-col">
+<div class="footer-logo">Clínica <span>Sorriso</span></div>
+<p>
+Tecnologia e cuidado para transformar o seu sorriso.
+Atendimento humanizado e odontologia moderna.
+</p>
+</div>
+
+<div class="footer-col">
+<h4>Links Rápidos</h4>
+<a href="#home">Início</a>
+<a href="#servicos">Serviços</a>
+<a href="#sobre">Sobre</a>
+<a href="#equipe">Equipe</a>
+<a href="#agendamento">Agendar</a>
+</div>
+
+<div class="footer-col">
+<h4>Contato</h4>
+<p>📍 Rua Exemplo, 123</p>
+<p>📞 (11) 99999-9999</p>
+<p>✉ contato@clinica.com</p>
+</div>
+
+<div class="footer-col">
+<h4>Horário</h4>
+<p>Seg - Sex: 08h às 18h</p>
+<p>Sábado: 08h às 13h</p>
+<p>Domingo: Fechado</p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>
+Desenvolvido por <strong>XarTins.LTDA</strong> — Soluções Digitais para Negócios Locais
+</p>
+</div>
+
+</footer>
+
+<a href="https://wa.me/5511999999999" class="whatsapp">
+💬 WhatsApp
+</a>
+<script src="./scripts/script.js"></script>
+
+</body>
+</html>
